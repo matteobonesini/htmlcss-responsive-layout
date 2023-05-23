@@ -1,0 +1,21 @@
+/* 
+    RESET
+*/
+
+:root {
+    --blue: #0084fd;
+    --light-blue: #b5ddff;
+    --violet: #9792e4;
+    --yellow: #fdc15f;
+    --dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+    GENERAL
+*/
