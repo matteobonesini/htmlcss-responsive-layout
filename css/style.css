@@ -82,6 +82,13 @@ main .benefit .card {
     border-radius: 20px;
 }
 
+/* about us */
+main .about-us {
+    padding: 1.25rem 0;
+}
+main .about-us .flex-elements > * {
+    width: 100%;
+}
 
 
 /* 
@@ -132,6 +139,13 @@ footer {
         margin: .625rem .625rem;
     }
 
+    main .about-us .flex-elements .content {
+        width: 60%;
+    }
+    main .about-us .flex-elements .profile {
+        width: 40%;
+    }
+
     footer .c-small {
         padding: 0 3.125rem;
     }
@@ -161,6 +175,13 @@ footer {
     main .benefit .card {
         width: calc((100% / 3) - 1.25rem);
         margin: .625rem .625rem;
+    }
+
+    main .about-us .flex-elements .content {
+        width: 70%;
+    }
+    main .about-us .flex-elements .profile {
+        width: 30%;
     }
 
 
@@ -193,4 +214,8 @@ footer {
     width: 150px;
     border-radius: 50%;
     border: 1px dotted black;
+}
+.debug main .about-us .flex-elements > * {
+    border: 1px dotted black;
+    height: 200px;
 }
