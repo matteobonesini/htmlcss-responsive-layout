@@ -66,6 +66,22 @@ main .testimonials .cards .card .card-photo {
     margin-bottom: 1.25rem;
 }
 
+/* benefit */
+main .benefit {
+    background-color: var(--secondary-color);
+    padding: 1.25rem 0;
+}
+main .benefit .cards {
+    flex-wrap: wrap;
+}
+main .benefit .card {
+    background-color: white;
+    width: 100%;
+    margin: .625rem 0;
+    padding: 1.875rem 1.25rem;
+    border-radius: 20px;
+}
+
 
 
 /* 
@@ -108,6 +124,14 @@ footer {
         width: 80%;
     }
 
+    main .benefit .cards {
+        margin: 0 -0.625rem;
+    }
+    main .benefit .card {
+        width: calc((100% / 2) - 1.25rem);
+        margin: .625rem .625rem;
+    }
+
     footer .c-small {
         padding: 0 3.125rem;
     }
@@ -130,6 +154,14 @@ footer {
     main .strategic-planning .flex-elements {
         align-items: flex-end;
     } 
+
+    main .benefit .cards {
+        margin: 0 -0.625rem;
+    }
+    main .benefit .card {
+        width: calc((100% / 3) - 1.25rem);
+        margin: .625rem .625rem;
+    }
 
 
     footer .c-small {
