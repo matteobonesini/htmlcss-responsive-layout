@@ -24,6 +24,9 @@ header .header-navbar .header-links {
 */
 
 /* main-info section */
+main .main-info {
+    padding: 1.25rem 0;
+}
 main .main-info .cards {
     flex-wrap: wrap;
 }
@@ -37,9 +40,16 @@ main .main-info .card {
 main .main-info .card.double {
     flex-wrap: wrap;
 }
-main .main-info .card.double > * {
-    width: 100%;
+
+/* strategic plannign section */
+main .strategic-planning {
+    background-color: var(--secondary-color);
+    padding: 1.25rem 0;
 }
+main .strategic-planning .flex-elements .right {
+    background-color: white;
+}
+
 
 
 /* 
@@ -87,9 +97,13 @@ footer {
     }
 
 
-    main .main-info .card.double > * {
+    main .desk-50 {
         width: 50%;
     }
+
+    main .strategic-planning .flex-elements {
+        align-items: flex-end;
+    } 
 
 
     footer .c-small {
@@ -102,8 +116,16 @@ footer {
 
 
 /* DEBUG */
-.debug main {
+/* .debug main {
     background-color: brown;
     min-height: 100vh;
     margin-bottom: 3.125rem;
+} */
+.debug main .strategic-planning .left,
+.debug main .strategic-planning .right {
+    border: 2px dotted black;
+    height: 200px;
+}
+.debug main .strategic-planning .left {
+    height: 300px;
 }

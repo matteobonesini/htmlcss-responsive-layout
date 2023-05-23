@@ -31,4 +31,9 @@ html {
 
 .flex-elements {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.desk-50 {
+    width: 100%;
 }
