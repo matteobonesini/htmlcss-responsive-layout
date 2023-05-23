@@ -50,6 +50,22 @@ main .strategic-planning .flex-elements .right {
     background-color: white;
 }
 
+/* testimonials */
+main .testimonials {
+    padding: 1.25rem 0;
+    text-align: center;
+}
+main .testimonials .cards .card {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 1.25rem .625rem;
+    margin: 1.25rem 0;
+    justify-content: center;
+}
+main .testimonials .cards .card .card-photo {
+    margin-bottom: 1.25rem;
+}
+
 
 
 /* 
@@ -80,7 +96,17 @@ footer {
         flex-wrap: wrap;
         width: calc((100% / 3) * 2  - 1.25rem);
     }
-
+    
+    main .testimonials .cards .card {
+        align-items: center;
+    }
+    main .testimonials .cards .card .card-photo {
+        width: 20%;
+        margin-bottom: 0;
+    }
+    main .testimonials .cards .card .card-content {
+        width: 80%;
+    }
 
     footer .c-small {
         padding: 0 3.125rem;
@@ -128,4 +154,11 @@ footer {
 }
 .debug main .strategic-planning .left {
     height: 300px;
+}
+.debug main .testimonials .card-photo span {
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px dotted black;
 }
