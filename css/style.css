@@ -148,14 +148,18 @@ footer {
     padding: 1.875rem 0;
     text-align: center;
 }
+footer p:first-child {
+    margin-bottom: 4rem;
+}
+footer a {
+    color: var(--secondary-color);
+}
 
 
 /* MEDIA QUERY */
 
 /* tablet */
 @media screen and (min-width: 768px) {
-
-
     main .main-info .cards {
         margin: 0 -0.625rem;
     }
@@ -199,7 +203,7 @@ footer {
     }
 
     footer .c-small {
-        padding: 0 3.125rem;
+        max-width: 485px;
     }
 }
 
@@ -247,10 +251,10 @@ footer {
         width: 30%;
     }
 
-
     footer .c-small {
-        padding: 0 3.125rem;
+        max-width: 750px;
     }
+
 }
 
 
