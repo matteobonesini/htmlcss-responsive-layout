@@ -90,6 +90,11 @@ main .about-us .flex-elements > * {
     width: 100%;
 }
 
+/* get started */
+main .get-started {
+    background-color: var(--secondary-color);
+    padding: 1.25rem 0;
+}
 
 /* 
     FOOTER
@@ -97,7 +102,7 @@ main .about-us .flex-elements > * {
 footer {
     background-color: var(--dark-color);
     color: white;
-    padding: 1.875rem;
+    padding: 1.875rem 0;
     text-align: center;
 }
 
@@ -153,6 +158,13 @@ footer {
 
 /* desktop */
 @media screen and (min-width: 992px) {
+    .c-small {
+        padding: 0 10rem;
+    }
+    .pad {
+        padding: 0 3rem;
+    }
+
     header .header-navbar .hamburger {
         display: none;
     }
