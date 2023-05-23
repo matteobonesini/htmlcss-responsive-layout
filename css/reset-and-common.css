@@ -3,11 +3,11 @@
 */
 
 :root {
-    --blue: #0084fd;
-    --light-blue: #b5ddff;
-    --violet: #9792e4;
-    --yellow: #fdc15f;
-    --dark: #333333;
+    --main-color: #0084fd;
+    --light-main-color: #b5ddff;
+    --secondary-color: #9792e4;
+    --special-color: #fdc15f;
+    --dark-color: #333333;
 }
 
 * {
@@ -19,3 +19,16 @@
 /* 
     GENERAL
 */
+html {
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 992px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.flex-elements {
+    display: flex;
+}

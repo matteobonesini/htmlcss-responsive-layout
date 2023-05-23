@@ -1,10 +1,22 @@
-@import "reset-and-common.css"
+@import "reset-and-common.css";
 
 
 /* 
     HEADER
 */
-
+header {
+    background-color: var(--main-color);
+    color: white;
+}
+header .header-navbar {
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    line-height: 3rem;
+}
+header .header-navbar .header-links {
+    display: none;
+}
 
 
 /* 
@@ -16,3 +28,21 @@
 /* 
     FOOTER
 */
+
+
+/* MEDIA QUERY */
+
+/* tablet */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* desktop */
+@media screen and (min-width: 992px) {
+    header .header-navbar .hamburger {
+        display: none;
+    }
+    header .header-navbar .header-links {
+        display: block;
+    }
+}
