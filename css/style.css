@@ -43,7 +43,7 @@ header .header-navbar .header-links a:last-child{
 
 /* main-info section */
 main .main-info {
-    padding: 1.25rem 0;
+    padding: 3.125rem 0;
 }
 main .main-info .cards {
     flex-wrap: wrap;
@@ -232,13 +232,22 @@ main .about-us .flex-elements .profile .profile-photo img {
     width: 100%;
     border-radius: 50%;
 }
-main .about-us .flex-elements .profile .profile-photo i {
+main .about-us .flex-elements .profile .profile-photo::after{
+    font-family: 'FontAwesome';
+    content: "\f10d";
+    color: var(--secondary-color);
+    font-size: 4em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/* main .about-us .flex-elements .profile .profile-photo i {
     position: absolute;
     top: 0;
     right: 0rem;
     font-size: 4.6875rem;
     color: var(--secondary-color);
-}
+} */
 main .about-us .flex-elements .profile h4 {
     color: var(--secondary-color);
     margin: 1.875rem 0;
@@ -253,7 +262,7 @@ main .about-us .flex-elements .profile a.link-button {
 /* get started */
 main .get-started {
     background-color: var(--secondary-color);
-    padding: 1.25rem 0;
+    padding: 3.125rem 0;
     text-align: center;
     color: white;
 }
@@ -303,6 +312,10 @@ footer a {
 
 /* tablet */
 @media screen and (min-width: 768px) {
+    span.uppercase {
+        font-weight: lighter;
+    }
+
     main .main-info .cards {
         margin: 0 -0.625rem;
     }
@@ -352,6 +365,15 @@ footer a {
     main .about-us .flex-elements .profile .profile-photo {
         width: 100%;
         margin: 0 auto;
+    }
+    main .about-us .flex-elements .profile .profile-photo::after{
+        font-family: 'FontAwesome';
+        content: "\f10d";
+        color: var(--secondary-color);
+        font-size: 4.875rem;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
 
     main .get-started .container.c-small {
@@ -448,7 +470,7 @@ footer a {
 .debug main .testimonials .card-photo {
     border-radius: 50%;
     border: 1px dotted black;
-} */
+}
 .debug main .about-us .flex-elements > * {
     border: 1px dotted black;
-}
+} */
