@@ -64,7 +64,7 @@ main .main-info .card > i{
 main .main-info .card a.link-button {
     background-color: var(--main-color);
     padding: .625rem 3rem;
-    line-height: 70px;
+    margin: 1.2rem 0;
 }
 main .main-info .card.double {
     flex-wrap: wrap;
@@ -161,17 +161,37 @@ main .testimonials .cards .card .card-content p{
 /* benefit */
 main .benefit {
     background-color: var(--secondary-color);
-    padding: 1.25rem 0;
+    padding: 3.125rem 0;
+}
+main .benefit .container > h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 3.125rem;
 }
 main .benefit .cards {
     flex-wrap: wrap;
 }
-main .benefit .card {
+main .benefit .cards .card {
     background-color: white;
+    color: var(--secondary-color);
     width: 100%;
     margin: .625rem 0;
     padding: 1.875rem 1.25rem;
     border-radius: 20px;
+}
+main .benefit .cards .card h4 {
+    margin: 1.25rem 0;
+}
+main .benefit .cards .card p {
+    color: var(--dark-color);
+}
+main .benefit .cards .card a.link-button {
+    color: white;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    margin-top: 1.875rem;
+    font-size: 1.1rem;
+    padding: .625rem 3rem;
 }
 
 /* about us */
@@ -194,7 +214,6 @@ main .get-started .container > * {
 }
 main .get-started .container h2.special {
     color: #fdc15f;
-    font-size: 3.5em;
 }
 
 main .get-started .container span:first-child {
@@ -269,7 +288,7 @@ footer a {
     main .benefit .cards {
         margin: 0 -0.625rem;
     }
-    main .benefit .card {
+    main .benefit .cards .card {
         width: calc((100% / 2) - 1.25rem);
         margin: .625rem .625rem;
     }
@@ -340,7 +359,7 @@ footer a {
     main .benefit .cards {
         margin: 0 -0.625rem;
     }
-    main .benefit .card {
+    main .benefit .cards .card {
         width: calc((100% / 3) - 1.25rem);
         margin: .625rem .625rem;
     }
