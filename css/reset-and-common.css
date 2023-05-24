@@ -47,13 +47,19 @@ html {
 
 
 h2 {
-
+    font-size: 2.2em;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 h4 {
     font-size: 1.5em;
+}
+
+span.uppercase {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
