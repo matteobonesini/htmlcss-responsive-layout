@@ -157,6 +157,20 @@ main .testimonials .cards .card .card-photo img{
 main .testimonials .cards .card .card-content p{
     margin-bottom: 1.5rem;
 }
+main .testimonials .cards .card .card-content p::before{
+    font-family: 'FontAwesome';
+    content: "\f10d";
+    position: relative;
+    bottom: 5px;
+    margin-right: 5px;
+}
+main .testimonials .cards .card .card-content p::after{
+    font-family: 'FontAwesome';
+    content: "\f10e";
+    position: relative;
+    top: 5px;
+    margin-left: 5px;
+}
 
 /* benefit */
 main .benefit {
@@ -196,11 +210,45 @@ main .benefit .cards .card a.link-button {
 
 /* about us */
 main .about-us {
-    padding: 1.25rem 0;
+    padding: 3.125rem 0;
 }
 main .about-us .flex-elements > * {
     width: 100%;
 }
+main .about-us .flex-elements .content {
+    margin-bottom: 3.125rem;
+}
+main .about-us .flex-elements .content h2.special {
+    color: var(--secondary-color);
+}
+main .about-us .flex-elements .content p:first-of-type {
+    margin: 2.5rem 0;
+}
+main .about-us .flex-elements .profile .profile-photo {
+    position: relative;
+    width: 60%;
+}
+main .about-us .flex-elements .profile .profile-photo img {
+    width: 100%;
+    border-radius: 50%;
+}
+main .about-us .flex-elements .profile .profile-photo i {
+    position: absolute;
+    top: 0;
+    right: 0rem;
+    font-size: 4.6875rem;
+    color: var(--secondary-color);
+}
+main .about-us .flex-elements .profile h4 {
+    color: var(--secondary-color);
+    margin: 1.875rem 0;
+}
+main .about-us .flex-elements .profile a.link-button {
+    background-color: var(--secondary-color);
+    padding: .625rem .9375rem;
+}
+
+
 
 /* get started */
 main .get-started {
@@ -294,10 +342,16 @@ footer a {
     }
 
     main .about-us .flex-elements .content {
-        width: 60%;
+        width: calc(60% - 1.5625rem);
+        margin-bottom: 0;
+        margin-right: 3.125rem;
     }
     main .about-us .flex-elements .profile {
-        width: 40%;
+        width: calc(40% - 1.5625rem);
+    }
+    main .about-us .flex-elements .profile .profile-photo {
+        width: 100%;
+        margin: 0 auto;
     }
 
     main .get-started .container.c-small {
@@ -365,10 +419,10 @@ footer a {
     }
 
     main .about-us .flex-elements .content {
-        width: 70%;
+        width: calc(70% - 1.5625rem);
     }
     main .about-us .flex-elements .profile {
-        width: 30%;
+        width: calc(30% - 1.5625rem);
     }
 
     footer .c-small {
@@ -397,5 +451,4 @@ footer a {
 } */
 .debug main .about-us .flex-elements > * {
     border: 1px dotted black;
-    height: 200px;
 }

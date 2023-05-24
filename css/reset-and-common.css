@@ -68,3 +68,7 @@ span.uppercase {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
+p.space {
+    line-height: 25px;
+}
