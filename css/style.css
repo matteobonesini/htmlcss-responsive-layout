@@ -137,6 +137,33 @@ main .about-us .flex-elements > * {
 main .get-started {
     background-color: var(--secondary-color);
     padding: 1.25rem 0;
+    text-align: center;
+    color: white;
+}
+main .get-started .container > * {
+    margin: 2rem 0;
+}
+main .get-started .container h2.special {
+    color: #fdc15f;
+    font-size: 3.5em;
+}
+
+main .get-started .container span:first-child {
+    text-transform: uppercase;
+    color: #cac8f0;
+}
+
+main .get-started .container a.link-button {
+    display: block;
+    background-color: white;
+    color: var(--secondary-color);
+    width: 60%;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-size: 1.3em;
+}
+main .get-started .container a:not(.link-button) {
+    color: white;
 }
 
 /* 
@@ -202,6 +229,10 @@ footer a {
         width: 40%;
     }
 
+    main .get-started .container.c-small {
+        padding: 0 10rem;
+    }
+
     footer .c-small {
         max-width: 485px;
     }
@@ -233,7 +264,11 @@ footer a {
     }
 
     main .strategic-planning .flex-elements {
+        justify-content: space-between;
         align-items: flex-end;
+    }
+    main .strategic-planning .desk-50 {
+        width: calc(50% - 1rem);
     } 
 
     main .benefit .cards {
