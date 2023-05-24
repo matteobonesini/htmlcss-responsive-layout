@@ -61,6 +61,10 @@ main .main-info .card > i{
     color: var(--main-color);
     margin-bottom: 2rem;
 }
+main .main-info .card p{
+    color: var(--light-text-color);
+    font-weight: 600;
+}
 main .main-info .card a.link-button {
     background-color: var(--main-color);
     padding: .625rem 3rem;
