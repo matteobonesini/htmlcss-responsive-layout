@@ -1,7 +1,7 @@
 @import "reset-and-common.css";
 
 
-/* 
+/*
     HEADER
 */
 header {
@@ -37,7 +37,7 @@ header .header-navbar .header-links a:last-child{
     color: black;
 }
 
-/* 
+/*
     MAIN
 */
 
@@ -87,11 +87,44 @@ main .main-info .card .card-right img {
 /* strategic plannign section */
 main .strategic-planning {
     background-color: var(--secondary-color);
-    padding: 1.25rem 0;
+    padding: 3.125rem 0;
+}
+main .strategic-planning .flex-elements .left {
+    margin-bottom: 3.125rem;
+    color: white;
+}
+main .strategic-planning .flex-elements .left img {
+    width: 100%;
+}
+main .strategic-planning .flex-elements .left h3 {
+    margin: 3rem 0 2rem;
 }
 main .strategic-planning .flex-elements .right {
     background-color: white;
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
 }
+main .strategic-planning .flex-elements .right img {
+    width: 100%;
+}
+main .strategic-planning .flex-elements .right h4 {
+    margin: 2rem 0;
+}
+main .strategic-planning .flex-elements .right i {
+    line-height: 25px;
+}
+main .strategic-planning .flex-elements .right a.link-button {
+    display: block;
+    background-color: var(--secondary-color);
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+    line-height: calc(50px - 1.25rem);
+    margin-top: 2rem;
+}
+
+
 
 /* testimonials */
 main .testimonials {
@@ -166,7 +199,7 @@ main .get-started .container a:not(.link-button) {
     color: white;
 }
 
-/* 
+/*
     FOOTER
 */
 footer {
@@ -202,7 +235,7 @@ footer a {
         width: 50%;
         margin: 0;
     }
-    
+
     main .testimonials .cards .card {
         align-items: center;
     }
@@ -269,7 +302,13 @@ footer a {
     }
     main .strategic-planning .desk-50 {
         width: calc(50% - 1rem);
-    } 
+    }
+    main .strategic-planning .flex-elements .left {
+        margin-bottom: 0;
+    }
+    main .strategic-planning .flex-elements .left h3 {
+        margin: 6rem 0 3rem;
+    }
 
     main .benefit .cards {
         margin: 0 -0.625rem;
@@ -304,12 +343,11 @@ footer a {
 } */
 .debug main .strategic-planning .left,
 .debug main .strategic-planning .right {
-    border: 2px dotted black;
-    height: 200px;
+    /* border: 2px dotted black; */
 }
-.debug main .strategic-planning .left {
+/* .debug main .strategic-planning .left {
     height: 300px;
-}
+} */
 .debug main .testimonials .card-photo span {
     display: inline-block;
     height: 150px;
